@@ -1,0 +1,283 @@
+:root {
+     --primary-color: #c72727;
+     --secondary-color: #f99500;
+     --light-color: #f3f3f3;
+     --dark-color: #333;
+     --max-width: 1100px;
+   }
+   
+   .category {
+     --sports-color: #f99500;
+     --ent-color: #a66bbe;
+     --tech-color: #009cff;
+   }
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+body{
+     font-family: lato,sans-serif;
+     line-height: 1.5;
+     background-color:  #f3f3f3;
+
+}
+.py-2{
+     padding: 1rem 0;
+}
+.btn-block{
+display: block;
+width: 100%;
+text-align: center;
+}
+p{
+     margin: 0.5rem 0;
+}
+a{
+     color:#43485a;
+     text-decoration: none;
+    }
+
+    ul{
+         list-style: none;
+    }
+    img{
+         width: 100%;
+    }
+    
+.container{
+     max-width:1100px ;
+     margin: auto;
+     padding: 0 2rem;
+     overflow: hidden;
+   
+
+}
+
+.nav{
+     background-color: #fff;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+}
+.containr{
+     display: grid;
+     grid-template-columns: 6fr 3fr 2fr;
+    padding: 1rem;
+     justify-content: center;
+     align-items: center;
+     align-content: center;
+    
+}
+.logo{
+     width: 180px;
+}
+
+.nav ul {
+     justify-self: end;
+     display:flex;
+     
+} 
+.nav ul li a{
+     padding: 0.75rem;
+     font-weight: bold;
+}
+.nav ul li a.current{
+     background-color:#c72727;
+}
+.nav ul li a:hover{
+     background-color: #f3f3f3;
+     color: #333;
+}
+.nav .social {
+     justify-self: center;
+}
+.nav .social i{
+     color: #777;
+     margin-right: 0.5rem;
+}
+#showcase{
+
+color: #fff;
+     background:#333;
+     padding: 2rem;
+     position: relative;
+    
+}
+#showcase:before{
+     content: '';
+     background: url('img/featured.jpg') no-repeat center center/cover;
+       
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height:100% ;
+opacity: 0.4;
+}
+#showcase .showcase-container{
+     display: grid;
+     grid-template-columns: repeat(2,1rf);
+     justify-content: center;
+     align-items: center;
+    height: 50vh;
+
+}
+
+.category{ 
+     display: inline-block;
+     color:#fff;
+     font-size:0.75rem;
+     text-transform: uppercase;
+     padding: 0.4rem 0.6rem;
+     border-radius: 15px;
+     margin-bottom: 0.5rem;
+}
+.category-sports { background: var(--sports-color) }
+.category-ent { background: var(--ent-color) }
+.category-tech { background: var(--tech-color) }
+
+
+#showcase .showcase-content{
+     z-index: 1;
+}
+#showcase .showcase-content p{
+     margin-bottom: 1rem;
+}
+h1, h2, h3, h4, h5, h6 {
+     font-family: 'Staatliches', cursive;
+     margin-bottom: .55rem;
+     line-height: 1.3;
+   }
+.btn{
+     display: inline-block;
+     background-color:#c72727;
+     padding:0.5rem 1rem;
+     color: #fff;
+   
+}
+
+.btn:hover{       
+     opacity: 0.9;
+}
+/*home articles*/
+.card{
+     background-color: #fff;
+     padding: 1rem;
+}
+
+#home-articles .articles-container{
+     display: grid;
+     grid-template-columns: repeat(3,3fr);
+     grid-gap:1rem;
+}
+#home-articles .articles-container article:first-child{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap: 1rem;
+     text-align: center;
+     grid-column:1/span 2;
+}
+#home-articles .articles-container article:last-child{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-column:2/span 2;
+
+}
+.bg-dark{
+background-color: var(--dark-color);
+color:#fff;
+}
+.bg-primary{
+     background-color: var(--primary-color);
+     color:#fff;
+     }
+     .bg-secondery{
+         background-color:var(--secondary-color) ;  
+         color: #fff;
+     }
+     .bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a{
+color:#fff;
+}
+/*footer style*/
+footer{
+     background-color: #333;
+     color:#fff;
+    
+}
+
+
+footer img{
+     width:150px;
+     
+}
+footer a{
+     color: #fff;
+}
+.footer-container{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 1.5rem;
+     
+}
+ul{
+     list-style-type: none;
+}
+footer li,.as li{
+     padding: 0.5rem 0;
+     border-bottom:#555 dotted 1px  ;
+     width: 90%;
+}
+li a:hover{
+     color:darkred;
+}
+.footer-container >*:last-child{
+     background-color: #444;
+     grid-column:1/ span 4 ;
+     padding: 1rem;
+     text-align: center;
+    font-size: 0.75rem;
+}
+.footer-container  input[type='email']{
+     padding: 0.5rem;
+     width: 90%;
+     margin-bottom: 0.5rem;
+}
+.footer-container  input[type='submit']{
+     margin: 0.5rem 0;
+     padding: 0.5rem;
+     width: 90%;
+     background-color: darkred;
+     border-color: darkred;
+}
+.btn-secondary{
+     background-color: #E58B05;
+    
+}
+.about-container{
+     display: grid;
+     grid-template-columns: 5fr 2fr;
+     margin: 2rem 0;
+     grid-gap: 1.5rem ;
+
+}
+.about-container>*:first-child{
+     grid-row: 1/span 3;
+}
+.meta{
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #eee;
+     padding: 0.5rem;
+}
+.meta .category{
+     margin-top: 0.4rem;
+}
